@@ -1,10 +1,5 @@
-safe:        true
-auto:        true
-server:      true
-server_port: 8080
-baseurl:     /
-url: http://localhost:8080
-
-source:      .
-destination: ./_site
-plugins:     ./_plugins
+safe: true
+source: https://github.com/colwilson/elementalwebint.github.com
+destination: _site
+lsi: false
+pygments: true

@@ -1,0 +1,6 @@
+---
+layout: default
+title: Welcome Page
+---
+# Welcoms to This Stuff
+this is just some text.

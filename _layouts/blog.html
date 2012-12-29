@@ -1,0 +1,29 @@
+{% include head.html %}
+<body>
+<div id="wrap">
+{% include header.html %}
+{% include sidebar.html %}
+            
+
+	
+	<div id="content">
+        {% include feature.html %}
+	
+        <div class="post">
+            <div class="postintro">{{page.date| date: "%d %b"}}<br />{{page.date| date: "%Y"}}</div>
+            <h2>{{page.title}}</h2>
+                {{content}}
+            <div>
+            Tags:
+                {% for tag in page.tags %}
+                <a href="#">{{tag}}</a>
+                {%if tag != page.tags[-1] %},{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+	</div>
+
+    {% include footer.html %}
+</div>
+</body>
+</html>

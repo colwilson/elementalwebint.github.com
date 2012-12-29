@@ -1,0 +1,21 @@
+{% include head.html %}
+<body>
+<div id="wrap">
+{% include header.html %}
+{% include sidebar.html %}
+            
+
+	
+	<div id="content">
+        {% include feature.html %}
+	
+		<div class="post">
+			<h2>{{page.title}}</h2>
+                {{content}}
+		</div>
+	</div>
+
+    {% include footer.html %}
+</div>
+</body>
+</html>
